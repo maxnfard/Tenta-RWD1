@@ -1,0 +1,22 @@
+//för bilder shape och hur ser ut de bilderna i sidan
+@import 'color-variabel';
+//****************************//
+@mixin img-format($margin-kanter){
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px $medblue;
+  margin-top: $margin-kanter;
+  margin-left: $margin-kanter;
+	margin-right: $margin-kanter+10;
+	display: inline;
+}
+//******************************//
+@mixin wrapit-over(){
+  width: 100%;
+  overflow: hidden;
+  margin: 0 ;	
+	}
+//*******************************//
+.wrapit{@include wrapit-over() ;
+}
+.img{@include img-format(20px);
+}

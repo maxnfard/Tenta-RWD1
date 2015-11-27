@@ -1,0 +1,143 @@
+// för  social media
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import 'color-variabel';
+//***********************
+@mixin globalbtn($l,$w){
+	display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: $w;
+    height:$w;
+    border:2px solid $neutralgray; /* add border to the buttons */
+    box-shadow: 0 3px 3px $moredarkgray;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+	border-radius: $l;}
+//***************************  
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+  @include globalbtn(27px, 50px)
+  
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: $medblue;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: $medblue;
+    background: $white;
+    border-color: $blueFoursquare /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: $bluelight;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: $bluelight;
+      background: $white;
+      border-color: $bluelight;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: $red;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: $red;
+      background: $white;
+      border-color: $red;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: $blueFoursquare;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: $blueFoursquare;
+      background: $white;
+      border-color: $bluelight;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: $red;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: $red;
+      background: $white;
+      border-color: $salmon;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: $darkblue;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: $darkblue;
+      background: $white;
+      border-color: $darkblue;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: $orangelight;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: $orangelight;
+      background:$white;
+      border-color: $orangelight;
+}
